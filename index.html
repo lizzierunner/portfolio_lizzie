@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lizzie Johnson's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #0b1b3f 0%, #000d1a 100%);
+      color: #fff;
+      font-family: 'Trebuchet MS', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+
+    .dont-panic {
+      font-size: 2rem;
+      color: yellow;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 1rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
+
+    .profile-img {
+      display: block;
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      margin: 1rem auto;
+      border: 3px solid #fff;
+    }
+
+    .about {
+      max-width: 700px;
+      margin: 1rem auto;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .button {
+      background: #004d99;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      margin: 0.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: #3399ff;
+      box-shadow: 0 0 10px #3399ff;
+    }
+
+    .floating-towel {
+      width: 80px;
+      position: absolute;
+      right: 10%;
+      top: 20%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(10deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lizzie Johnson</h1>
+  <div class="dont-panic">DON’T PANIC</div>
+
+  <img src="lizzie.jpeg" alt="Lizzie" class="profile-img" />
+  <img src="weezer.jpeg" alt="Weezer" class="profile-img" />
+
+  <div class="about">
+    <p>Runner, coder, and mystery lover. Creator of the Murder Mystery Replit App and adventurer at heart. Never forget my towel. 💫</p>
+    <p>“Time is an illusion. Lunchtime doubly so.” – Douglas Adams</p>
+    <p>“Let’s do the unthinkable. Let’s pretend this can work.” – Dirk Gently</p>
+  </div>
+
+  <div class="contact">
+    <a href="https://github.com/lizzierunner" target="_blank">
+      <button class="button">GitHub</button>
+    </a>
+    <a href="https://linkedin.com/in/lizzie-johnson-160874381" target="_blank">
+      <button class="button">LinkedIn</button>
+    </a>
+    <a href="https://morning-mystery-lizziejohnson30.replit.app" target="_blank">
+      <button class="button">Murder Mystery App</button>
+    </a>
+  </div>
+
+  <img src="towel.png" class="floating-towel" alt="Towel" />
+
+  <footer>
+    <p>© 2025 Lizzie Johnson • 42 • Powered by coffee & improbability</p>
+  </footer>
+</body>
+</html>
