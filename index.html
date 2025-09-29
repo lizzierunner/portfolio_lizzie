@@ -423,14 +423,6 @@
       90% { left: 90%; opacity: 1; }
       100% { left: calc(100% + 200px); }
     }
-  </style>
-</head>
-<body>
-
-  <h1>Lizzie Johnson</h1>
-        backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
 
     @media (max-width: 768px) {
       h1 { font-size: 2.5rem; }
@@ -438,6 +430,12 @@
       .profile-container { flex-direction: column; align-items: center; }
       .guide-frame { position: relative; margin: 1rem auto; }
       .towel { right: 10px; top: 10px; }
+    }
+
+    .guide-title {
+      color: #00ff00;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -448,7 +446,7 @@
 
   <!-- Hitchhiker's Guide Display -->
   <div class="guide-frame" onclick="changeGuideText()">
-    <div style="color: #00ff00; font-weight: bold; margin-bottom: 5px;">THE GUIDE</div>
+    <div class="guide-title">THE GUIDE</div>
     <div class="guide-text" id="guideText">
       TOWEL: A towel is about the most massively useful thing an interstellar hitchhiker can have...
     </div>
